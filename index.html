@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Recuperatirio</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Registrar usuario</h1>
+            <nav class="navbar">
+                <a>Inicio</a>
+                <a>Ubicación</a>
+                <a>Quiénes somos</a>
+                <a>Contacto</a>
+                <i class="fas fa-bars"></i>
+            </nav>
+        </header>
+        <section class="modal" id="sctModal">
+            <div class="modal-container">
+                <h2 class="modal-title">Felicitaciones</h2>
+                <p class="modal-pName" id="pName"></p>
+                <img class="modal-img" src="images/success_icon.png" alt="Icono de éxito">
+                <p class="modal-text">Te has registrado correctamente en el sitio web, ya puedes cerrar esta ventana. Muchas gracias</p>
+                <span class="modal-close" id="btnModalC">Cerrar</span>
+            </div>
+        </section>
+        <form class="form">
+            <h2 class="form-title">Registrarse</h1>
+            <div class="form-container">
+                <fieldset class="form-group">
+                    <input class="form-txt" type="text" id="txtNombre" placeholder=" ">
+                    <label class="form-lblTxt" for="txtNombre">Nombre</label>                    
+                    <label class="form-lblError hidden" for="txtNombre">Ingrese su nombre</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input class="form-txt" type="text" id="txtApellido" placeholder=" ">
+                    <label class="form-lblTxt" for="txtApellido">Apellido</label>
+                    <label class="form-lblError hidden" for="txtApellido">Ingrese su apellido</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input class="form-txt" type="text" id="txtEmail" placeholder=" ">
+                    <label class="form-lblTxt" for="txtEmail">E-mail</label>
+                    <label class="form-lblError hidden" for="txtEmail">El email ingresado no es valido</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input class="form-txt" type="text" id="txtEmail" placeholder=" ">
+                    <label class="form-lblTxt" for="txtEmail">E-mail</label>
+                    <label class="form-lblError hidden" for="txtEmail">El email no coincide con el anterior</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input class="form-txt" type="password" id="txtPassword" placeholder=" ">
+                    <label class="form-lblTxt" for="txtPassword">Contracena</label>
+                    <label class="form-lblError hidden" for="txtPassword">Ingresa una contracena</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input class="form-txt" type="password" id="txtPassword" placeholder=" ">
+                    <label class="form-lblTxt" for="txtPassword">Contracena</label>
+                    <label class="form-lblError hidden" for="txtPassword">La contracena no coincide</label>
+                </fieldset>
+                
+                
+                <input class="form-btn" type="submit" value="Enviar" id="btnEnviar">
+            </div>
+        </form>
+        <footer class="footer">
+            <p>
+                Recuperatirio Manuel Eugenio Losada Clua
+            </p>
+        </footer>
+    </body>
+</html>
