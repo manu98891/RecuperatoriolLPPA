@@ -3,7 +3,6 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
     background-color: #000000;
     background-size: 38px 38px;
     background-position: 0 0,19px 19px;
@@ -189,13 +188,12 @@ textarea{
     width: 100%;
     background: none;
     margin-bottom: 8px;
-    color: rgb(112, 108, 108);
+    color: #625858;
     font-size: 16px;
     padding: 5px 3px;
     border:none;
     outline:none;
     border-bottom: 1px solid #000000;
-    font-family: 'Roboto', sans-serif;
 }
 
 .form-txt:focus + .form-lblTxt, .form-txt:not(:placeholder-shown) + .form-lblTxt{
@@ -225,7 +223,6 @@ textarea{
     width: 100%;
     background-color: #1900ff;
     color:#ffffff;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
     padding: 12px 0px;
@@ -260,7 +257,6 @@ textarea{
 .form-select{
     width: 100%;
     margin-bottom: 8px;
-    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     padding: 2px;
 }
