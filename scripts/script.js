@@ -3,9 +3,12 @@ function llenarVariables() {
     modal = document.getElementById("sctModal");
     modalClose = document.getElementById("btnModalC");
     modalpName = document.getElementById("pName");
+
     nombre = document.getElementById("txtNombre");
     apellido = document.getElementById("txtApellido");
+    contra = document.getElementById("txtPassword")
     email = document.getElementById("txtEmail");
+
     errorS = document.getElementById("lblErrorS");
     errorT = document.getElementById("lblErrorT");
     errorP = document.getElementById("lblErrorP");
@@ -46,6 +49,10 @@ function validarCampos() {
     }
     if (!email.value.match(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/)) { //se valida que el email tenga formato valido
         email.labels[1].classList.toggle("hidden",false);
+        validate = false;
+    }
+    if (contra.value.length < 6) {
+        contra.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
 
