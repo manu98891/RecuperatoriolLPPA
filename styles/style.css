@@ -92,7 +92,7 @@ textarea{
     width: 90%;
     max-width: 600px;
     max-height: 90%;
-    background-color: #000000;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 48px 40px;
     display:flex;
@@ -131,8 +131,8 @@ textarea{
 
 .modal-close{
     text-decoration: none;
-    color: var(--blanco);
-    background-color: var(--azul);
+    color: #ffffff;
+    background-color: #1900ff;
     padding: 16px 48px;
     border: 1px solid;
     border-radius: 6px;
@@ -144,7 +144,7 @@ textarea{
 
 .modal-close:hover{
     color: var(--azul);
-    background-color: var(--blanco);
+    background-color: #ffffff;
 }
 
 .hidden{
@@ -152,7 +152,7 @@ textarea{
 }
 
 .form{
-    background-color: var(--blanco);
+    background-color: #ffffff;
     margin:auto;
     width: 90%;
     max-width: 400px;
@@ -183,7 +183,7 @@ textarea{
 .form h3{
     font-size: 15px;
     font-weight: bold;
-    color: var(--azul);
+    color: #1900ff;
     margin: 6px;
 }
 

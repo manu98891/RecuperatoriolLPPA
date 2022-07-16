@@ -68,3 +68,11 @@ function validarCampos() {
 
     return validate;
 }
+
+function ocultarLabels(){
+    for (let i=0; i<textList.length; i++){ //oculta label de cada uno de los input text cuando entra en foco
+        textList[i].onfocus = function(){
+            textList[i].labels[1].classList.toggle("hidden",true)
+        }
+    }
+}
