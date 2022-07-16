@@ -33,9 +33,7 @@ window.onload = () => {
                     modal.classList.remove("modal-show"); //lo cierra
                 }
             }
-        } else {
-            window.alert("Hay errores en al menos un campo."); //si hay algun campo mal, muestra el alert
-        }
+        } 
     }
     ocultarLabels();//ejecuta la funcion que se encarga de ocultar los labels de error
 }
