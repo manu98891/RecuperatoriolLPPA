@@ -8,6 +8,8 @@ function llenarVariables() {
     apellido = document.getElementById("txtApellido");
     contra = document.getElementById("txtPassword")
     email = document.getElementById("txtEmail");
+    emailValida = document.getElementById("txtEmailValidation");
+    contraValida = document.getElementById("txtPasswordValidation");
 
     errorS = document.getElementById("lblErrorS");
     errorT = document.getElementById("lblErrorT");
@@ -51,8 +53,16 @@ function validarCampos() {
         email.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
-    if (contra.value.length < 6) {
+    if (contra.value.length < 6) { // validad que la contra tenga mas de 6 caracteres
         contra.labels[1].classList.toggle("hidden",false);
+        validate = false;
+    }
+    if (emailValida.value != email.value) { // validar que el mail sea el mismo
+        emailValida.labels[1].classList.toggle("hidden",false);
+        validate = false;
+    }
+    if (contraValida.value != contra.value) {
+        contraValida.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
 
