@@ -18,45 +18,45 @@ function llenarVariables() {
 }
 
 window.onload = () => {
-    llenarVariables(); //cuando inicia la web, carga los elementos del HTML en las variables
-    submit.onclick = function (e) { //cuando se presiona el boton enviar, realiza lo siguiente:
+    llenarVariables(); 
+    submit.onclick = function (e) { 
         e.preventDefault();
-        if (validarCampos() == true) { //ejecuta la funcion validarCampos, en caso de estar correctos, ejecuta el if
-            modalpName.innerText = nombre.value.concat(" ", apellido.value); //envia nombre y apellido registrados al modal
-            modal.classList.add("modal-show"); //muestra el modal
-            modalClose.onclick = function(){ //cuando se presiona el boton cerrar del modal
+        if (validarCampos() == true) { 
+            modalpName.innerText = nombre.value.concat(" ", apellido.value); 
+            modal.classList.add("modal-show"); 
+            modalClose.onclick = function(){ 
                 limpiarFormulario();
                 modal.classList.remove("modal-show"); //lo cierra
             }
-            window.onclick = function(e) { //cuando se presiona cualquier parte fuera del modal
+            window.onclick = function(e) { 
                 if (e.target == modal) {
                     modal.classList.remove("modal-show"); //lo cierra
                 }
             }
         } 
     }
-    ocultarLabels();//ejecuta la funcion que se encarga de ocultar los labels de error
+    ocultarLabels();
 }
 
 function validarCampos() {
     validate = true;
-    if (nombre.value.length < 2) { //se valida que el nombre tenga al menos 3 caracteres
+    if (nombre.value.length < 2) { 
         nombre.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
-    if (apellido.value.length < 2) { //se valida que el apellido tenga al menos 3 caracteres
+    if (apellido.value.length < 2) { 
         apellido.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
-    if (!email.value.match(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/)) { //se valida que el email tenga formato valido
+    if (!email.value.match(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/)) { 
         email.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
-    if (contra.value.length < 6) { // validad que la contra tenga mas de 6 caracteres
+    if (contra.value.length < 6) { 
         contra.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
-    if (emailValida.value != email.value) { // validar que el mail sea el mismo
+    if (emailValida.value != email.value) { 
         emailValida.labels[1].classList.toggle("hidden",false);
         validate = false;
     }
@@ -69,7 +69,7 @@ function validarCampos() {
 }
 
 function ocultarLabels(){
-    for (let i=0; i<textList.length; i++){ //oculta label de cada uno de los input text cuando entra en foco
+    for (let i=0; i<textList.length; i++){ 
         textList[i].onfocus = function(){
             textList[i].labels[1].classList.toggle("hidden",true)
         }
